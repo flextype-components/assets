@@ -24,7 +24,10 @@ class Assets
     /**
      * Add new asset
      *
-     * $username = Cookie::get('username');
+     * Assets::add('js', 'jquery.js', 'site', 1);
+     * Assets::add('js', 'site.js', 'site', 2);
+     * Assets::add('css', 'site.css', 'site', 1);
+     * Assets::add('css', 'theme.css', 'site', 2);
      *
      * @param  string $asset_type
      * @param  string $asset
@@ -42,7 +45,8 @@ class Assets
     /**
      * Get assets for current namespace and asset type
      *
-     * $username = Cookie::get('username');
+     * $css = Assets::get('css', 'site');
+     * $js  = Assets::get('js', 'site');
      *
      * @param  string $asset_type
      * @param  string $namespace
