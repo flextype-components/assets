@@ -4,7 +4,7 @@
   "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/flextype-components/assets",
-  "description": "",
+  "description": "Assets Component for managing assets in your application.",
   "authors": [
     {
         "name": "Sergey Romanenko",
