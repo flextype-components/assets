@@ -19,7 +19,7 @@ class Assets
      *
      * @var array
      */
-    protected static $assets = [];
+    private static $assets = [];
 
     /**
      * Add new asset
