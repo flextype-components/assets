@@ -54,6 +54,8 @@ class Assets
      */
     public static function get(string $asset_type, string $namespace) : array
     {
+        $assets = [];
+
         // is there some registered $assets for current $namespace ?
         if (isset(Assets::$assets[$namespace])
             && isset(Assets::$assets[$namespace][$asset_type])
@@ -64,9 +66,9 @@ class Assets
 
             // Sort $assets by priority from low to high
             ksort($assets);
-
-            // Return $assets
-            return $assets;
         }
+
+        // Return $assets
+        return $assets;
     }
 }
